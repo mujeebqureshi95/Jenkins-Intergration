@@ -45,43 +45,5 @@ pipeline {
                 }
                 }
             }
-            stage('Task-3') {
-                steps {
-                script {
-                    timeout(time: 300, unit: 'SECONDS') {
-                      fs = listfiles("/mnt/nfs/var/nfs_share_dir/new/",50000,74999)
-                        fs.each {
-                            println(it)
-                        } 
-                    }
-                }
-                }
-            }
-            stage('Task-4') {
-                steps {
-                script {
-                    timeout(time: 300, unit: 'SECONDS') {
-                      fs = listfiles("/mnt/nfs/var/nfs_share_dir/new/",75000,99999)
-                        fs.each {
-                            println(it)
-                        } 
-                    }
-                }
-                }
-            }
-            stage('Task-5') {
-                steps {
-                script {
-                    timeout(time: 300, unit: 'SECONDS') {
-                      fs = listfiles("/mnt/nfs/var/nfs_share_dir/new/",100000,124999)
-                        fs.each {
-                            println(it)
-                        } 
-                    }
-                }
-                }
-            }
-        }
-    }
-    }
-
+            
+                      
