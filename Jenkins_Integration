@@ -41,7 +41,7 @@ pipeline {
                         fs.each {
                             println(it)
                         } 
-                    }]
+                    }
                 }
                 }
             }
